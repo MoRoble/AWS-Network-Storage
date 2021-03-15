@@ -1,6 +1,6 @@
 # AWS-Network-Storage
 
-### Hi there 👋, Network Storage
+### Network Storage
 #### Elastic File System
 
 
