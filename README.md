@@ -1,24 +1,15 @@
 # AWS-Network-Storage
 
-Based on my current role, it's my responsibilitly to give staff members network attached storage mounted to their user and be accessible on any device they use. <br><br>I decided to do EFS project to project my activities to AWS Cloud technology after I had lessons related to Elastic File System.<br>
-Refer to top uploaded snippet of code to provision Cloud Formation stack on AWS.
+### Hi there 👋, Network Storage
+#### Elastic File System
 
 
-  <br><br>
-  <h1>About This Proect</h1>
-  <h2>Network Storage</h2>
-  <hr />
-  <br>
-  <p class="head">Interests</p>
-  <ul>
-    <li>Drawing</li>
-    <li>Photography</li>
-    <li>Design</li>
-    <li>Programming</li>
-    <li>Computer Science</li>
-  </ul>
-  <p class="head">Skills</p>
-  <ul>
-    <li>Web Design with HTML & CSS</li>
-  </ul>
-  <p class="head">Education</p>
+Hodan School have asked us to implement Network Storage for their staff to share resources and files. Currently, they have shared file located in their local Server, due to staff working from home it demanded to have all that resources be accessible from anywhere. 
+
+To begin with I have designed a diagram to illustrate the architecture of 2 Linux instances sharing files from different availability zones in the same VPC for this project. 
+
+Later I want to expand this project to make all staff user profiles get their shared drive mounted so that will be accessible to any device they roam around, here is a diagram. 
+
+![Elastic File System](https://github.com/MoRoble/AWS-Network-Storage/blob/main/EFS.png)
+
+Elastic File System is useful product in AWS which provides network file system that can be mounted within Linux instances and used multiple instances at once. It will allow us to store resources that will not be lost when instances are added or removed, and that provides significant benefits in terms of scaling as well as self-healing architecture.
