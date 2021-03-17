@@ -2,7 +2,7 @@
 
 ### Network Storage
 ##### Overview
-I am pleased to submit this outline for migration of Elastic Files System at Hodan School. My proposal is based on the school required upgrade due to staff are working from home. The alternative is when staff are fully back on site to upgrade this plan to be migrated to local on-premises server so that all devices in the school and all staff will be able to mount shared drive to their user profiles end to end.
+I am pleased to submit this outline for migration of Elastic Files System at Hodan School. My proposal is based on the school required upgrade due to staff are working from home. The alternative is when staff are fully back on site to upgrade this plan to migrate to local on-premises server so that shared folder will be mounted to all devices in the school and all staff user profiles end to end.
 
 #### Elastic File System
 
