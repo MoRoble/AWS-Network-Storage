@@ -6,7 +6,7 @@ I am pleased to submit this outline for migration of Elastic Files System at Hod
 
 #### Elastic File System
 
-Hodan School have requested to implement Network Storage for their staff to share resources and files. Currently, they have shared file system located in their on-premises Server, due to staff working from home it demanded to have all that resources be accessible from anywhere. 
+I will be using EFS as part of this project to upgrade Hodan School Network Storage to a way more flexible, elastic, durable and accesible from anywhere. Currently, they have shared file system located in their on-premises Server, staff are strugling to share their resources as they used to share when on site, due to staff working from home it demanded to have all that resources be accessible from anywhere. 
 
 To begin with I have designed a diagram to illustrate the architecture of 2 Linux instances sharing files from different availability zones in the same VPC for this project. 
 
