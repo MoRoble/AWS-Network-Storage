@@ -6,12 +6,16 @@ I am pleased to submit this outline for migration of Elastic Files System at Hod
 
 #### Elastic File System
 
-I will be using EFS as part of this project to upgrade Hodan School Network Storage to a way more flexible, elastic, durable and accesible from anywhere. Currently, they have shared file system located in their on-premises Server, staff are strugling to share their resources as they used to share when on site, due to staff working from home it demanded to have all that resources be accessible from anywhere. 
+I will be using EFS as part of this project to upgrade Hodan School Network Storage to a way more flexible, elastic, durable and accesible from anywhere. Currently, they have shared file system located in their on-premises Server, staff are reporting from home lack of resources as they used to share files when on site.
 
-To begin with I have designed a diagram to illustrate the architecture of 2 Linux instances sharing files from different availability zones in the same VPC for this project. 
+To solve that problem in different stages I begin with implementing an architecture of 2 Linux instances sharing files from different availability zones in the same VPC for this project. 
 
-Later I want to expand this project to make all staff user profiles get their shared drive mounted to file server so that will be accessible to any device they roam around, here is a diagram. 
+Below Diagram represents the complete stages of this project, when we are going to implement secure connection from on-premises to AWS cloud and staff are able to access their shared storage in either on-site or working from home, here is a the diagram. 
 
 ![Elastic File System](https://github.com/MoRoble/AWS-Network-Storage/blob/d84a35545eb15e44b372ab52b2c5fe8312f5810f/Hodan-EFS2.png)
 
 Elastic File System is useful product in AWS which provides network file system that can be mounted within Linux instances and used multiple instances at once. It will allow us to store resources that will not be lost when instances are added or removed, and that provides significant benefits in terms of scaling as well as self-healing architecture.
+
+I will be using CloudFormation to provision the instances, subnets, security groups and the VPC, here's the link 
+
+Once stack provision is complete, then I will be do implementing file system by following these steps:
