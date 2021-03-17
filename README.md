@@ -16,6 +16,6 @@ Below Diagram represents the complete stages of this project, when we are going 
 
 Elastic File System is useful product in AWS which provides network file system that can be mounted within Linux instances and used multiple instances at once. It will allow us to store resources that will not be lost when instances are added or removed, and that provides significant benefits in terms of scaling as well as self-healing architecture.
 
-I will be using CloudFormation to provision the instances, subnets, security groups and the VPC, here's the link 
+I will be using CloudFormation to provision the instances, subnets, security groups and the VPC as part of one-click deployment, here's the link 
 
 Once stack provision is complete, then I will implement file system by following these steps:
