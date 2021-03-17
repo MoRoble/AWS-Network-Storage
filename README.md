@@ -1,8 +1,10 @@
 # AWS-Network-Storage
 
 ### Network Storage
-#### Elastic File System
+##### Overview
+I am pleased to submit this outline for migration of Elastic Files System at Hodan School. My proposal is based on the school required upgrade due to staff are working from home. The alternative is when staff are fully back on site to upgrade this plan to be migrated to local on-premises server so that all devices in the school and all staff will be able to mount shared drive to their user profiles end to end.
 
+#### Elastic File System
 
 Hodan School have requested to implement Network Storage for their staff to share resources and files. Currently, they have shared file system located in their on-premises Server, due to staff working from home it demanded to have all that resources be accessible from anywhere. 
 
