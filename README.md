@@ -18,4 +18,6 @@ Elastic File System is useful product in AWS which provides network file system 
 
 I will be using CloudFormation to provision the instances, subnets, security groups and the VPC as part of one-click deployment, here's the link 
 
+[one-Click](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://github.com/MoRoble/AWS-Network-Storage/blob/main/HHK_EFS_VPC_v3.yaml&stackName=HDN)
+
 Once stack provision is complete, then I will implement file system by following these steps:
