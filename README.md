@@ -52,4 +52,5 @@ That proves this is shared network file system where any file added on one insta
 
 This project will be continued to expand connecting **Site-to-Site VPN** connection to make all those files visible to On-premises devices.
 
-🦋I hope that was informative til next time I will like to thank you (⌐■_■)
+
+🦋*I hope that was informative til next time I will like to thank you* (⌐■_■)
