@@ -48,6 +48,8 @@ then move into `cd /efs/Hodan-Resources` folder to create text file named `hubey
 
 I am going to do the same steps on `HD-EC2-B`, once `Hodan-Resources` folder mounted then I will check `hubeyda.txt` file is available there.
 
+![Proect success]()"Success!"
+
 That proves this is shared network file system where any file added on one instance are visible to all other instances.
 
 This project will be continued to expand connecting **Site-to-Site VPN** connection to make all those files visible to On-premises devices.
