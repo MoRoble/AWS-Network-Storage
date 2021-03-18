@@ -27,28 +27,28 @@ Once first templete is in `CREATE_COMPLETE` status, then the second for instance
 - [One-Click Instances Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://github.com/MoRoble/AWS-Network-Storage/blob/main/HHK_EFS_VPC_v3.yaml&stackName=HDN-EC2)
 
 Once stack provision is complete, then I will implement file system by following these steps:  
-After successfully complete stack provisioning go to EFS from services then create File System named HD-EFS, modify network settings using security group associated with Hodan-VPC.
 
-Next connect HD-EC2-A, install amazon-efs-utils then make directory named Hodan-Resources under /efs/Hodan-Resources.
+Start with creating files system, go to EFS from services then create File System named `HD-EFS`, modify network settings using security group associated with `Hodan-VPC`.
+
+Next connect `HD-EC2-A`, install `amazon-efs-utils` then make directory named `Hodan-Resources` under `/efs/Hodan-Resources`.
 
 There are two ways of mounting file system to an instance:
+- EFS Can be configured On Launch instance wizard.
+- Update `fstab` file on EC2 instance
 
-Can be configured On Launch instance wizard.
+For this project I will be updating `fstab` file on both `HD-EC2-A & B` instances, to do that copy and modify this line of code and paste it in 2nd line of fstab file.
 
-Update fstab file on EC2 instance
-
-For this project I will be updating fstab file on HD-EC2-A, to do that copy and modify this line of code and paste it in 2nd line of fstab file.
-
-file-sytem-id:/ /efs/Hodan-Resources efs _netdev,tls,iam 0 0
+`file-sytem-id:/ /efs/Hodan-Resources efs _netdev,tls,iam 0 0`
 
 now mount the directory to instance using this code
 
-sudo mount /efs/Hodan-Resources
+`sudo mount /efs/Hodan-Resources`
 
-then move into cd /efs/Hodan-Resources folder to create text file named hubeyda.txt to check that this is in fact a network file system.
+then move into `cd /efs/Hodan-Resources` folder to create text file named `hubeyda.txt` to check that this is in fact a network file system.
 
-I am going to do the same steps on HD-EC2-B, once Hodan-Resources folder mounted then I will check hubeyda.txt file is available there.
+I am going to do the same steps on `HD-EC2-B`, once `Hodan-Resources` folder mounted then I will check `hubeyda.txt` file is available there.
 
 That proves this is shared network file system where any file added on one instance are visible to all other instances.
 
-This project will be continued to expand connecting Site-to-Site VPN connection to make all those files visible to On-premises devices.
+This project will be continued to expand connecting **Site-to-Site VPN** connection to make all those files visible to On-premises devices.
+
