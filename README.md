@@ -24,8 +24,8 @@ I will be using CloudFormation to provision the instances, subnets, security gro
 - `us-east-1` will be my region for this project  
 - Once first templete is in `CREATE_COMPLETE` status, then the second for instance provisioning.
 
-- [One-Click VPC Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://hubeyda.s3.eu-west-2.amazonaws.com/HDN_EFS_VPC.yaml&stackName=HoDaN)
-- [One-Click Instances Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://hubeyda.s3.eu-west-2.amazonaws.com/HDN_EFS_Instances.yaml&stackName=HDN-EC2)
+ - [One-Click VPC Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://hubeyda.s3.eu-west-2.amazonaws.com/HDN_EFS_VPC.yaml&stackName=HoDaN)
+ - [One-Click Instances Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://hubeyda.s3.eu-west-2.amazonaws.com/HDN_EFS_Instances.yaml&stackName=HDN-EC2)
 
 Once stack provision is complete, then I will implement file system by following these steps:  
 
