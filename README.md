@@ -19,10 +19,11 @@ Elastic File System is useful product in AWS which provides network file system 
 I will be using CloudFormation to provision the instances, subnets, security groups and the VPC as part of one-click deployment, here's the link 
 
 
-  I will be using temporarily OneClick deployment since it requires paid storage 
+  *I will be using temporarily OneClick deployment since it requires paid storage* 
   
-`us-east-1` will be my region for this project  
-Once first templete is in `CREATE_COMPLETE` status, then the second for instance provisioning.
+- `us-east-1` will be my region for this project  
+- Once first templete is in `CREATE_COMPLETE` status, then the second for instance provisioning.
+
 - [One-Click VPC Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://hubeyda.s3.eu-west-2.amazonaws.com/HDN_EFS_VPC.yaml&stackName=HoDaN)
 - [One-Click Instances Deployment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://hubeyda.s3.eu-west-2.amazonaws.com/HDN_EFS_Instances.yaml&stackName=HDN-EC2)
 
