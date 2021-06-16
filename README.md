@@ -6,7 +6,11 @@ I am pleased to submit this outline for migration of Elastic Files System at Hod
 
 #### Elastic File System
 
-I will be using EFS as part of this project to upgrade Hodan School Network Storage to a way more flexible, elastic, durable and accesible from anywhere. Currently, they have shared file system located in their on-premises Server, staff are reporting from home lack of resources as they used to share files when on site.
+Elastic File System (EFS) is Amazon’s way of allowing businesses to share file data from multiple EC2’s or on-prem instances simultaneously. EFS is an elastic and serverless service. It automatically grows and shrinks depending on the file storing needs of your business without you having to provision or manage it.
+
+As part of this project on upgrading Hodan Shcool Network Storage we have chosen Amazon EFS to a way more flexible, elastic, Strong consistency, concurrent accessibility, file locking and durable feautures. Currently, they have shared file system located in their on-premises Server, staff are reporting from home lack of resources as they used to share files when on site. For stakeholders the advantages include being able to divide up your content between frequently accessed or infrequently accessed storage classes, that saves some serious cash.
+
+In the future Hodan School will have a hundred EC2 instances with each hosting a web application, Database Servers, Active Directory Server, Network Server and Backup Storage which Hundreds of thousands of people are accessing these servers on a regular basis that will producing HUGE amounts of data.
 
 To solve that problem in different stages I begin with implementing an architecture of 2 Linux instances sharing files from different availability zones in the same VPC for this project. 
 
